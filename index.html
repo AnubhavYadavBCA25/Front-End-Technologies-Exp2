@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 3-Column Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="mainheader">Modern Hub</h1>
+    </header>
+
+    <div class="container">
+        <!-- Left Column: Navigation -->
+        <aside class="column left-col">
+            <h3>Explorer</h3>
+            <ul>
+                <li>Dashboard</li>
+                <li>Messages</li>
+                <li>Photos</li>
+                <li>Profile Settings</li>
+            </ul>
+        </aside>
+
+        <!-- Middle Column: Main Content -->
+        <main class="column middle-col">
+            <h2>User Profile</h2>
+            
+            <div class="profile-display" id="profileCard">
+                <p><strong>Name:</strong> <span id="userName">Anubhav Yadav</span></p>
+                <p><strong>Bio:</strong> <span id="userBio">Data Science Student</span></p>
+            </div>
+
+            <h3>Update Information</h3>
+            <div class="form-group">
+                <label for="nameInput">New Display Name</label>
+                <input type="text" id="nameInput" placeholder="Enter your name...">
+            </div>
+            <div class="form-group">
+                <label for="bioInput">Professional Bio</label>
+                <input type="text" id="bioInput" placeholder="Tell us about yourself...">
+            </div>
+            <button id="updateBtn">Save Profile Changes</button>
+        </main>
+
+        <!-- Right Column: Friends/Activity -->
+        <aside class="column right-col">
+            <h3>Active Now</h3>
+            <ul>
+                <li><span class="status-dot"></span>Sachin Singh</li>
+                <li><span class="status-dot"></span>Yash Maurya</li>
+                <li><span class="status-dot"></span>Govinda Khapitar</li>
+            </ul>
+        </aside>
+    </div>
+
+    <div id="statusMessage">Profile Updated Successfully!</div>
+
+    <footer>
+        &copy; 2026 Interactive Dashboard Project
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
